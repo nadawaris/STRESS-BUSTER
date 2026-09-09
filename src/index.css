@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #fff1f2; /* Rose 50 */
+  overflow-x: hidden;
+  color: #1e293b;
+}
+
+/* Custom wiggly animation for bubbly feeling */
+@keyframes bubble-wiggle {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(2px, -4px) scale(1.03); }
+  66% { transform: translate(-3px, 2px) scale(0.97); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.animate-wiggle {
+  animation: bubble-wiggle 4s ease-in-out infinite;
+}
+
+/* Satisfying bounce keyframe */
+@keyframes bouncy-pulse {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-bubble-bounce {
+  animation: bouncy-pulse 2.5s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffe4e6;
+}
+::-webkit-scrollbar-thumb {
+  background: #f43f5e;
+  border-radius: 9999px;
+}

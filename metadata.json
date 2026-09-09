@@ -1,0 +1,6 @@
+{
+  "name": "RageType",
+  "description": "A bubbly pink multiplayer fast-typing frustration release game!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
